@@ -69,7 +69,7 @@
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "prettier": "1.16.0",
-    "puppeteer": "7.0.1",
+    "puppeteer": "^24.22.0",
     "quickhull3d": "2.0.4",
     "raw-loader": "^0.5.1",
     "react": "16.10.2",
@@ -118,7 +118,7 @@
     "worker-loader": "^2.0.0"
   },
   "scripts": {
-    "bootstrap": "npm install && lerna bootstrap --hoist \"{react,react-dom}\" -- --legacy-peer-deps",
+    "bootstrap": "npm install  --legacy-peer-deps && lerna bootstrap --hoist \"{react,react-dom}\" -- --legacy-peer-deps",
     "install-ci": "npm ci && lerna bootstrap --hoist \"{react,react-dom}\" -- --legacy-peer-deps",
     "build": "lerna run build && webpack",
     "watch": "lerna run watch --parallel",
